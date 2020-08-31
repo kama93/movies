@@ -1,0 +1,12 @@
+html { 
+  background-color: black;
+}
+body{
+font-family: 'Lato', sans-serif;
+color: white;
+background-color: black;
+}
+
+.stars{
+    position: relative;
+}

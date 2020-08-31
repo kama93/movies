@@ -1,0 +1,50 @@
+.fortune{
+   display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items:center
+}
+
+.button-pos{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items:center
+}
+
+.posters{
+  height: 30rem;
+  width:auto !important
+}
+
+.start{
+    border: none;
+    background: white;
+    font-family: 'Lato', sans-serif;
+    color: black;
+    font-weight: 700;
+    padding: 2rem;
+    text-transform: uppercase;
+    border-radius: 6px;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+    z-index: 999;
+    font-size: 2rem;
+    margin-top: 3rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    &:hover{
+    color: whitesmoke;
+    font-weight: 1000 !important;
+    letter-spacing: 1rem;
+    background: none;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.3s ease 0s;
+    z-index: 999;
+}
+}
+.books{
+  text-align: center
+}
+
