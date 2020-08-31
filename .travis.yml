@@ -1,0 +1,7 @@
+language: javascript
+
+services:
+  - docker
+
+script:
+- docker build -t docker.pkg.github.com/kama93/movie.service/app:$TRAVIS_BUILD_NUMBER .
