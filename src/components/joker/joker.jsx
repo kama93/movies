@@ -42,7 +42,7 @@ const Joker = () => {
         <div className='fortune'>
             {movie && (movie.poster_path ?
                 (<div className="button-pos"><img className='posters' style={{ 'width': '100%' }} alt='poster' src={imageUrl} /><button className='start' onClick={() => moviePick()}>Recheck</button></div>) :
-                (<div className="button-pos"><h1 className='books'>Go and read some books</h1><button className='start' onClick={() => moviePick()}>Recheck</button></div>))}
+                (<div className="button-pos"><h1 className='books'>Go and read some books (just kidding ... please try again)</h1><button className='start' onClick={() => moviePick()}>Recheck</button></div>))}
             <ClipLoader
                 css={override}
                 size={150}
