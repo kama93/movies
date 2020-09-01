@@ -17,4 +17,4 @@ RUN npm install -g http-server
 # Bundle app source
 COPY . .
 
-CMD http-server /usr/src/app/build --port $PORT --proxy $API_URL
+CMD http-server /usr/src/app/build --port 5000 --proxy $API_URL
