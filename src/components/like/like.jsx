@@ -11,14 +11,14 @@ const Like = ({ currentUser }) => {
     let [movies, setMovies] = useState();
 
     useEffect(() => {
-        fetch('http://localhost:3005/like/' + currentUser.id, {
+        fetch('/api/like/' + currentUser.id, {
             method: 'get',
             headers: { 'Content-Type': 'application/json' },
         })
             .then(response => response.json())
             // .then (response=> console.log(response))
             .then(response => Promise.all(response.map(x =>
-                fetch('http://localhost:3005/joker', {
+                fetch('/api/joker', {
                     method: 'post',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({

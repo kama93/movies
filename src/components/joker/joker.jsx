@@ -22,7 +22,7 @@ const Joker = () => {
         setLoader(true)
         let x = Math.floor(Math.random() * 70000) + 1;
         setRandomNum(x);
-        fetch('http://localhost:3005/joker', {
+        fetch('/api/joker', {
             method: 'post',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({

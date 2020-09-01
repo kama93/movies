@@ -24,7 +24,7 @@ const SignUp = ({ loadUser }) => {
     }
 
     const onSubmitSignUp = () => {
-        fetch('http://localhost:3005/signin', {
+        fetch('/api/signin', {
             method: 'post',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
@@ -54,8 +54,8 @@ const SignUp = ({ loadUser }) => {
                 name="name "
                 placeholder="name"
                 required
-                minlength="3"
-                maxlength="100"
+                minLength="3"
+                maxLength="100"
                 onChange={onNameChange} />
             <input
                 className='reg'

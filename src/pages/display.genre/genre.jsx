@@ -14,7 +14,7 @@ const Genre = ({ currentUser }) => {
     let [page, setPage] = useState(1)
 
     useEffect(() => {
-        fetch('http://localhost:3005/genre', {
+        fetch('/api/genre', {
             method: 'post',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
@@ -28,7 +28,7 @@ const Genre = ({ currentUser }) => {
 
     const fetchData = () => {
         setPage(page + 1)
-        fetch('http://localhost:3005/genre', {
+        fetch('/api/genre', {
             method: 'post',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
@@ -44,7 +44,7 @@ const Genre = ({ currentUser }) => {
     }
 
     const onButtonClick = (movie_id) => {
-        fetch('http://localhost:3005/like', {
+        fetch('/api/like', {
             method: 'put',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
