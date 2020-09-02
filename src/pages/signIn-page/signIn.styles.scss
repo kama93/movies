@@ -1,5 +1,17 @@
 .forms{
     display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: center;
     flex-wrap: wrap;
     margin-top: 10rem;
 }
+
+@media only screen and (max-width: 400px) {
+    .forms{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center
+    }
+  }

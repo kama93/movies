@@ -20,6 +20,12 @@ const SignIn = ({ setCurrentUser }) => {
         setSignInPassword(event.target.value)
     }
 
+    const handleKeyDown = (e) => {
+        if (e.key === 'Enter') {
+            onSubmitSignIn()
+        }
+    }
+
     const onSubmitSignIn = () => {
         fetch('/api/signin', {
             method: 'put',
@@ -62,13 +68,15 @@ const SignIn = ({ setCurrentUser }) => {
                 placeholder='password'
                 required
                 onChange={onPasswordChange}
+                onKeyDown={e => handleKeyDown(e)}
             />
             <input
                 className='buttonSign'
                 type='button'
                 name='button'
                 value='Submit'
-                onClick={onSubmitSignIn} />
+                onClick={onSubmitSignIn}
+                 />
         </div>
     )
 }

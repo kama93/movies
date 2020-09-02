@@ -49,7 +49,7 @@ const Joker = () => {
                 color={"#123abc"}
                 loading={loader}
             />
-            {!movie && (<div className="button-pos"><p>Click 'start' and check what we have for yout today.</p><button className='start' onClick={() => moviePick()}>Start</button></div>)}
+            {!movie && (<div className="button-pos"><p className="start-description">Click 'start' and check what we have for yout today.</p><button className='start' onClick={() => moviePick()}>Start</button></div>)}
 
 
         </div>)

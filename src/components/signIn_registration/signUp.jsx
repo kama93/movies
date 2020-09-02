@@ -23,6 +23,12 @@ const SignUp = ({ loadUser }) => {
         setSignUpPassword(event.target.value)
     }
 
+    const handleKeyDown = (e) => {
+        if (e.key === 'Enter') {
+            onSubmitSignUp()
+        }
+    }
+
     const onSubmitSignUp = () => {
         fetch('/api/signin', {
             method: 'post',
@@ -72,13 +78,15 @@ const SignUp = ({ loadUser }) => {
                 pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
                 title="Please include at least 1 uppercase character, 1 lowercase character and 1 number"
                 required
-                onChange={onPasswordChange} />
+                onChange={onPasswordChange}
+                onKeyDown={e => handleKeyDown(e)} />
             <input
                 className='buttonReg'
                 type='button'
                 name='button'
                 value='Submit'
-                onClick={onSubmitSignUp} />
+                onClick={onSubmitSignUp}
+                 />
         </div>
     )
 };

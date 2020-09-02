@@ -1,11 +1,10 @@
 .registrationForm{
     display: flex;
     flex-direction: column;
-    width: 30rem;
-    height: 20rem;
-    margin: 4rem;
-    z-index: 999
-
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    padding: 20px
 }
 .headerReg{
     text-align: center;
@@ -24,8 +23,7 @@
     width: 5rem;
     height: 3rem;
     text-align: center;
-    margin-left: 13rem;
-    margin-top: 2rem
+    margin-top: 10px
     }
     ::placeholder {
         color: black;
@@ -40,7 +38,6 @@
     color: black;
     border-color: black;
     border-radius: 2rem;
-    margin: 0.5rem
 }
 
 .reg:valid:hover{
@@ -52,4 +49,19 @@
   }
 input:focus{
     outline: none;
+}
+
+@media only screen and (max-width: 400px) {
+    .registrationForm{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 20rem
+    }
+    .reg{
+        width:20rem;
+        height:2rem;
+        font-size: 1rem
+    }
 }

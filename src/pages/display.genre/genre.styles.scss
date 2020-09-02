@@ -5,8 +5,6 @@
     grid-row-gap: 0.3em;
     margin-top: 2.5rem;
     text-align: center;
-    margin-left: 1rem;
-    margin-right: 1rem;
 }
 .cart{
     display: flex;
@@ -23,7 +21,7 @@ color: #ffffff; font-family: 'Lato', sans-serif; font-weight: 500; margin: 0 0 4
 .container {
   position: relative;
   width: 50%;
-  margin-left: 150px;
+
 }
 
 .poster {
@@ -87,5 +85,19 @@ color: #ffffff; font-family: 'Lato', sans-serif; font-weight: 500; margin: 0 0 4
   align-items: center;
   justify-content: center;
   font-size: 1.5rem
+}
+
+@media only screen and (max-width: 400px) {
+  .loader{
+    height: 60px;
+    width: auto;
+    margin-top: 10rem
+  }
+  .cart-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+  }
 
 }
