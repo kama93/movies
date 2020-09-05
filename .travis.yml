@@ -8,7 +8,9 @@ env:
     secure: IST2CYb3c1iel95BiX1AOSxoQ1aKaFu7ttbaOuOU4pEBUeO3/zH2/Us4BmD8d/T1qN8Rr9qPQuu9yPufoZ/roaegleIOO5d/V1NqRgmqYU8qgtcCobMb/FF6JmSUmZuOL1uhUfoR9HOOC+Lh+ui6zSTTBhM88CqcXZhBTv3o3iNdj7dB5yoxrDDi5fN+JcTmvev0ay2FhITPiP+7JWGOlLxuXVz9BKxZMhvJlzC0E411By59TExWkZgvClP7hBnvacZq5/bHhEYw5ITSW/b6WNpuOZWMIL4pS9h5P75fdwOYGTTTVdpX6lQJ4rJ1tsMVHm6n+LvOEXRoRTx4yhWxpEtew5r2xpveAW3f5tVBrXHtxj/UT1zff28+5EGofDRtzJAQTs14oji0eQ41zU7MUv8kgWMGBYsVGkSZ97s3jZf2er/WEiEMi6F2ZKR4JZhn4A7K3UyWFt60IL7MztvNffKOGCxli4/uBYsaiJj7/J4ZU2sq279pqSXqDPr3V4uhvZZ7dXE/BCIx+pVWQ/JdVOVqhToN7128v79tfr1Y+1OSnGywKHnuptCLeaZb4mE0oqbQgi13O2DvA2w4oy0h/+tmw5oT5oAYx8OS0mynV0C5cMRsjvVFt0U7wEmSg2Dd/IbU7Lz0Htg4mq70OBl1LO0gAB9iGYggH/IHi/+XKDU=
 
 script:
-- docker build -t kama93/movie:$TRAVIS_BUILD_NUMBER .
+- docker build -t kama93/movie:$TRAVIS_BUILD_NUMBER ./front-end
+- docker build -t kama93/movie.service:$TRAVIS_BUILD_NUMBER ./back-end
 - docker images
 - echo "$DOCKER_TOKEN" | docker login -u kama93 --password-stdin
 - docker push kama93/movie:$TRAVIS_BUILD_NUMBER
+- docker push kama93/movie.service:$TRAVIS_BUILD_NUMBER

@@ -19,4 +19,4 @@ COPY . .
 
 RUN npm run-script build
 
-CMD http-server /usr/src/app/build --port 5000 --proxy $API_URL
+CMD http-server /usr/src/app/build --port 5000
