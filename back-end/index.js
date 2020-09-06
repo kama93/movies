@@ -80,7 +80,7 @@ app.post('/api/signin', (req,res)=>{
 
 // movie API
 
-const API_KEY= process.env.MOVIE_API_KEY;
+const API_KEY = process.env.MOVIE_API_KEY;
 
 // movie fetch for genres
 
