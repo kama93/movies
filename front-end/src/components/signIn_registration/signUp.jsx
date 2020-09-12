@@ -6,7 +6,7 @@ import { connect } from 'react-redux';
 
 import './signUp.styles.scss'
 
-const SignUp = ({ loadUser }) => {
+const SignUp = ({ setCurrentUser }) => {
     const [signUpEmail, setSignUpEmail] = useState('');
     const [signUpName, setSignUpName] = useState('');
     const [signUpPassword, setSignUpPassword] = useState('');
