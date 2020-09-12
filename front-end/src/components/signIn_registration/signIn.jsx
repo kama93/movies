@@ -49,7 +49,12 @@ const SignIn = ({ setCurrentUser }) => {
 
 
     return (
+        <div>
         <div className='signInForm'>
+        <div className="demo-user">
+        <h3>Fill with this info to check a Demo User</h3>
+        <p>login: a@gmail.com<br/>
+          password: a</p></div>
             <h1 className='headerSign'>Sign In</h1>
             <input
                 className='signIn'
@@ -76,8 +81,10 @@ const SignIn = ({ setCurrentUser }) => {
                 name='button'
                 value='Submit'
                 onClick={onSubmitSignIn}
-                 />
+                 /> 
         </div>
+      
+          </div>
     )
 }
 const mapDispatchToProps = dispatch => ({

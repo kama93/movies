@@ -85,9 +85,10 @@ const Genre = ({ currentUser }) => {
                                             Original language: {movie.original_language}<br />
                                             Date release: {movie.release_date}<br />
                                         </div>
-                                        <div className='like'>
+                                        {currentUser &&
+                                        (<div className='like'>
                                             <button title="Add to favourites" onClick={() => onButtonClick(movie.id)} className='heart'>&#10084;</button>
-                                        </div>
+                                        </div>)}
                                     </div>
                                 </div>
                             </div>

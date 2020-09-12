@@ -76,7 +76,7 @@ const SignUp = ({ loadUser }) => {
                 name='password'
                 placeholder="Create Password (Min.8 Characters)"
                 pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
-                title="Please include at least 1 uppercase character, 1 lowercase character and 1 number"
+                title="Please include at least 1 uppercase character, 1 lowercase character and 2 numbers and 2 special signs"
                 required
                 onChange={onPasswordChange}
                 onKeyDown={e => handleKeyDown(e)} />
