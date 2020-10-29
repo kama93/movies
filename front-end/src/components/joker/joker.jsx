@@ -32,7 +32,6 @@ const Joker = () => {
             .then(response => response.json())
             .then(response => {
                 setMovie(response);
-                console.log(response);
                 setImageUrl('https://image.tmdb.org/t/p/w500' + response.poster_path)
                 setLoader(false)
             })

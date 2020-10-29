@@ -11,7 +11,7 @@ function Header() {
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src="images/cinema.jpg"
+                    src="images/cinema.png"
                     alt="First slide"
                 />
                 <Carousel.Caption>
@@ -22,7 +22,7 @@ function Header() {
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src="images/movie.jpg"
+                    src="images/movie.png"
                     alt="Third slide"
                 />
                 <Carousel.Caption>
@@ -35,7 +35,7 @@ function Header() {
             <Carousel.Item>
                 <img
                     className="d-block w-100"
-                    src="images/jocker.jpg"
+                    src="images/jocker.png"
                     alt="Third slide"
                 />
                 <Carousel.Caption>
